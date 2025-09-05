@@ -8,5 +8,5 @@ export const routes: Routes = [
 { path: 'ejercicio1', component: Ejercicio1Component },
   { path: 'ejercicio2', component: Ejercicio2Component },
   { path: 'ejercicio3', component: Ejercicio3Component },
-  { path: '**', redirectTo: '/ejercicio1' } // ruta por defecto
+  { path: '**', redirectTo: '/ejercicio1' } 
 ];

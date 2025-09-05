@@ -1,1 +1,19 @@
-<p>ejercicio2 works!</p>
+<div class="container">
+  <h1>Ejercicio: Agregar y Eliminar Texto</h1>
+
+  <!-- Input para escribir el texto -->
+  <input 
+    type="text" 
+    [(ngModel)]="nuevoTexto" 
+    placeholder="Escribe algo..." 
+  />
+  <button (click)="agregarTexto()">Agregar</button>
+
+  <!-- Lista de textos -->
+  <ul>
+    <li *ngFor="let item of textos; let i = index">
+      {{ item }}
+      <button class="eliminar" (click)="eliminarTexto(i)">Eliminar</button>
+    </li>
+  </ul>
+</div>
